@@ -11,16 +11,13 @@ obj/
 .vscode/
 
 # Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleasePublic/
-x64/
-x86/
-build/
-bld/
 [Bb]in/
 [Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+build/
+bin/
+obj/
 [Ll]og/
 
 # NuGet
