@@ -15,9 +15,13 @@ public class FinalDecisionNode : FlowNodeBase
     
     public override FlowNodeType NodeType => FlowNodeType.FinalDecision;
     
-    public FinalDecisionNode()
+    public FinalDecisionNode() : base("Final Decision")
     {
-        Name = "Final Decision";
+    }
+
+    protected override void InitializePorts()
+    {
+        InputPorts.Add(new Ports.NodePort("Decision In", Ports.PortType.Data, Ports.PortDirection.Input, NodeId));
     }
     
     protected override void OnConfigure(JsonElement configuration)

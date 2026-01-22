@@ -13,3 +13,4 @@ G:\NODEJS\WPFVisionPro\src\VisionPro.Vision\obj\Debug\net8.0\VisionPro.Vision.dl
 G:\NODEJS\WPFVisionPro\src\VisionPro.Vision\obj\Debug\net8.0\refint\VisionPro.Vision.dll
 G:\NODEJS\WPFVisionPro\src\VisionPro.Vision\obj\Debug\net8.0\VisionPro.Vision.pdb
 G:\NODEJS\WPFVisionPro\src\VisionPro.Vision\obj\Debug\net8.0\ref\VisionPro.Vision.dll
+G:\NODEJS\WPFVisionPro\src\VisionPro.Vision\obj\Debug\net8.0\VisionPro.Vision.sourcelink.json

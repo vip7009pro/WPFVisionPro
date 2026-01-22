@@ -15,3 +15,4 @@ G:\NODEJS\WPFVisionPro\src\VisionPro.Flow\obj\Debug\net8.0\VisionPro.Flow.dll
 G:\NODEJS\WPFVisionPro\src\VisionPro.Flow\obj\Debug\net8.0\refint\VisionPro.Flow.dll
 G:\NODEJS\WPFVisionPro\src\VisionPro.Flow\obj\Debug\net8.0\VisionPro.Flow.pdb
 G:\NODEJS\WPFVisionPro\src\VisionPro.Flow\obj\Debug\net8.0\ref\VisionPro.Flow.dll
+G:\NODEJS\WPFVisionPro\src\VisionPro.Flow\obj\Debug\net8.0\VisionPro.Flow.sourcelink.json

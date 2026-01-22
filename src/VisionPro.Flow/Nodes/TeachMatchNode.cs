@@ -17,9 +17,15 @@ public class TeachMatchNode : FlowNodeBase
     
     public TeachMatchTool Tool => _tool;
     
-    public TeachMatchNode()
+    public TeachMatchNode() : base("Teach Match")
     {
-        Name = "Teach Match";
+    }
+
+    protected override void InitializePorts()
+    {
+        InputPorts.Add(new Ports.NodePort("Image In", Ports.PortType.Image, Ports.PortDirection.Input, NodeId));
+        OutputPorts.Add(new Ports.NodePort("Image Out", Ports.PortType.Image, Ports.PortDirection.Output, NodeId));
+        OutputPorts.Add(new Ports.NodePort("Coordinates", Ports.PortType.Coordinates, Ports.PortDirection.Output, NodeId));
     }
     
     protected override void OnConfigure(JsonElement configuration)

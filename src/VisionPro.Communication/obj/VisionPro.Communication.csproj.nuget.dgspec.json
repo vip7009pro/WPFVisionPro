@@ -57,6 +57,10 @@
             "OPCFoundation.NetStandard.Opc.Ua": {
               "target": "Package",
               "version": "[1.5.374.70, )"
+            },
+            "System.IO.Ports": {
+              "target": "Package",
+              "version": "[10.0.2, )"
             }
           },
           "imports": [

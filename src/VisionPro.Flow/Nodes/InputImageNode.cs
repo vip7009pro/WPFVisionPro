@@ -11,9 +11,13 @@ public class InputImageNode : FlowNodeBase
 {
     public override FlowNodeType NodeType => FlowNodeType.InputImage;
     
-    public InputImageNode()
+    public InputImageNode() : base("Input Image")
     {
-        Name = "Input Image";
+    }
+
+    protected override void InitializePorts()
+    {
+        OutputPorts.Add(new Ports.NodePort("Image Out", Ports.PortType.Image, Ports.PortDirection.Output, NodeId));
     }
     
     public override async Task<FlowNodeResult> ExecuteAsync(FlowExecutionContext context, CancellationToken cancellationToken = default)

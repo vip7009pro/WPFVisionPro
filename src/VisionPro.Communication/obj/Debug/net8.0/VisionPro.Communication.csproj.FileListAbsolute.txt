@@ -13,3 +13,4 @@ G:\NODEJS\WPFVisionPro\src\VisionPro.Communication\obj\Debug\net8.0\VisionPro.Co
 G:\NODEJS\WPFVisionPro\src\VisionPro.Communication\obj\Debug\net8.0\refint\VisionPro.Communication.dll
 G:\NODEJS\WPFVisionPro\src\VisionPro.Communication\obj\Debug\net8.0\VisionPro.Communication.pdb
 G:\NODEJS\WPFVisionPro\src\VisionPro.Communication\obj\Debug\net8.0\ref\VisionPro.Communication.dll
+G:\NODEJS\WPFVisionPro\src\VisionPro.Communication\obj\Debug\net8.0\VisionPro.Communication.sourcelink.json

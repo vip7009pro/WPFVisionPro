@@ -36,6 +36,7 @@ public partial class App : Application
         services.AddSingleton<ViewModels.MainViewModel>();
         services.AddTransient<ViewModels.LiveViewViewModel>();
         services.AddTransient<ViewModels.FlowEditorViewModel>();
+        services.AddTransient<ViewModels.ROIEditorViewModel>();
         services.AddTransient<ViewModels.ProductManagerViewModel>();
         
         // Register Services

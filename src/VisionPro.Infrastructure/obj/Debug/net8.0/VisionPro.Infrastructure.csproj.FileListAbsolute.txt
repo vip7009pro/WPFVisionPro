@@ -13,3 +13,4 @@ G:\NODEJS\WPFVisionPro\src\VisionPro.Infrastructure\obj\Debug\net8.0\VisionPro.I
 G:\NODEJS\WPFVisionPro\src\VisionPro.Infrastructure\obj\Debug\net8.0\refint\VisionPro.Infrastructure.dll
 G:\NODEJS\WPFVisionPro\src\VisionPro.Infrastructure\obj\Debug\net8.0\VisionPro.Infrastructure.pdb
 G:\NODEJS\WPFVisionPro\src\VisionPro.Infrastructure\obj\Debug\net8.0\ref\VisionPro.Infrastructure.dll
+G:\NODEJS\WPFVisionPro\src\VisionPro.Infrastructure\obj\Debug\net8.0\VisionPro.Infrastructure.sourcelink.json

@@ -62,6 +62,9 @@
             <TabItem Header="🔀 Flow Editor">
                 <views:FlowEditorControl/>
             </TabItem>
+            <TabItem Header="✏️ ROI Editor">
+                <views:ROIEditorControl/>
+            </TabItem>
             <TabItem Header="📦 Product Manager">
                 <views:ProductManagerControl/>
             </TabItem>
@@ -105,7 +108,7 @@
                         <Run Text="NG: "/><Run Text="{Binding NgCount, FallbackValue=0}" FontWeight="Bold"/>
                     </TextBlock>
                     <TextBlock Foreground="{StaticResource TextSecondaryBrush}" Margin="16,0">
-                        <Run Text="Yield: "/><Run Text="{Binding Yield, StringFormat='{}{0:F1}%', FallbackValue='100.0%'}" FontWeight="Bold"/>
+                        <Run Text="Yield: "/><Run Text="{Binding Yield, Mode=OneWay, StringFormat='{}{0:F1}%', FallbackValue='100.0%'}" FontWeight="Bold"/>
                     </TextBlock>
                 </StackPanel>
                 

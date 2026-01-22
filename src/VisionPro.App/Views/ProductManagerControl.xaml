@@ -4,9 +4,7 @@
              xmlns:vm="clr-namespace:VisionPro.App.ViewModels"
              Background="{StaticResource BackgroundBrush}">
     
-    <UserControl.DataContext>
-        <vm:ProductManagerViewModel/>
-    </UserControl.DataContext>
+
     
     <Grid Margin="16">
         <Grid.ColumnDefinitions>

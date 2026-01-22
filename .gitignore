@@ -1,0 +1,37 @@
+# Visual Studio
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+*.sln.docstates
+
+# VS Code
+.vscode/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleasePublic/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+*.stub
+*.org
+*.crt
+*.tmp
+
+# App specific
+config/user_*.json
+logs/

@@ -4,9 +4,7 @@
              xmlns:vm="clr-namespace:VisionPro.App.ViewModels"
              Background="{StaticResource BackgroundBrush}">
     
-    <UserControl.DataContext>
-        <vm:FlowEditorViewModel/>
-    </UserControl.DataContext>
+
     
     <Grid>
         <Grid.ColumnDefinitions>
@@ -51,7 +49,36 @@
         <!-- Flow Canvas -->
         <Border Grid.Column="1" Background="#1A1A2A" Margin="0,8" CornerRadius="8">
             <Grid>
-                <!-- Canvas for nodes -->
+                <!-- Connections Layer -->
+                <ItemsControl ItemsSource="{Binding Connections}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemContainerStyle>
+                        <Style TargetType="ContentPresenter">
+                             <!-- Important: Don't bind Canvas.Left/Top here if the Path figures use absolute coordinates -->
+                        </Style>
+                    </ItemsControl.ItemContainerStyle>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Path Stroke="#66FFFFFF" StrokeThickness="3">
+                                <Path.Data>
+                                    <PathGeometry>
+                                        <PathFigure StartPoint="{Binding StartPoint}">
+                                            <BezierSegment Point1="{Binding ControlPoint1}" 
+                                                           Point2="{Binding ControlPoint2}" 
+                                                           Point3="{Binding EndPoint}"/>
+                                        </PathFigure>
+                                    </PathGeometry>
+                                </Path.Data>
+                            </Path>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+                
+                <!-- Nodes Layer -->
                 <ItemsControl ItemsSource="{Binding Nodes}">
                     <ItemsControl.ItemsPanel>
                         <ItemsPanelTemplate>
@@ -66,22 +93,81 @@
                     </ItemsControl.ItemContainerStyle>
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
-                            <Border Background="{StaticResource SurfaceBrush}" 
-                                    BorderBrush="{StaticResource PrimaryBrush}"
-                                    BorderThickness="2" CornerRadius="6" Padding="12,8"
-                                    MinWidth="120" Cursor="Hand">
-                                <StackPanel>
-                                    <TextBlock Text="{Binding Name}" 
-                                               Foreground="{StaticResource TextPrimaryBrush}"
-                                               FontWeight="SemiBold" HorizontalAlignment="Center"/>
-                                    <TextBlock Text="{Binding NodeType}" 
-                                               Foreground="{StaticResource TextSecondaryBrush}"
-                                               FontSize="10" HorizontalAlignment="Center"/>
-                                </StackPanel>
-                            </Border>
+                            <Grid MinWidth="140">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <!-- Input Ports (Left) -->
+                                <ItemsControl Grid.Column="0" ItemsSource="{Binding InputPorts}">
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <Ellipse Width="10" Height="10" Fill="Yellow" Margin="-5,4,2,4" 
+                                                     Stroke="Black" StrokeThickness="1"
+                                                     ToolTip="{Binding Name}"
+                                                     Tag="{Binding}"
+                                                     Cursor="Hand"
+                                                     MouseLeftButtonDown="Port_MouseLeftButtonDown"
+                                                     MouseLeftButtonUp="Port_MouseUp"
+                                                     MouseMove="Port_MouseMove"
+                                                     MouseEnter="Port_MouseEnter"
+                                                     MouseLeave="Port_MouseLeave"/>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+
+                                <!-- Node Body -->
+                                <Border Grid.Column="1" Background="{StaticResource SurfaceBrush}" 
+                                        BorderBrush="{StaticResource PrimaryBrush}"
+                                        BorderThickness="2" CornerRadius="6" Padding="12,8"
+                                        Cursor="SizeAll"
+                                        MouseLeftButtonDown="Node_MouseLeftButtonDown"
+                                        MouseLeftButtonUp="Node_MouseLeftButtonUp"
+                                        MouseMove="Node_MouseMove">
+                                    <StackPanel>
+                                        <TextBlock Text="{Binding Name}" 
+                                                   Foreground="{StaticResource TextPrimaryBrush}"
+                                                   FontWeight="SemiBold" HorizontalAlignment="Center"/>
+                                        <TextBlock Text="{Binding NodeType}" 
+                                                   Foreground="{StaticResource TextSecondaryBrush}"
+                                                   FontSize="10" HorizontalAlignment="Center"/>
+                                    </StackPanel>
+                                </Border>
+
+                                <!-- Output Ports (Right) -->
+                                <ItemsControl Grid.Column="2" ItemsSource="{Binding OutputPorts}">
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <Ellipse Width="10" Height="10" Fill="LimeGreen" Margin="2,4,-5,4" 
+                                                     Stroke="Black" StrokeThickness="1"
+                                                     ToolTip="{Binding Name}"
+                                                     Tag="{Binding}"
+                                                     Cursor="Hand"
+                                                     MouseLeftButtonDown="Port_MouseLeftButtonDown"
+                                                     MouseLeftButtonUp="Port_MouseUp"
+                                                     MouseMove="Port_MouseMove"
+                                                     MouseEnter="Port_MouseEnter"
+                                                     MouseLeave="Port_MouseLeave"/>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </Grid>
                         </DataTemplate>
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
+                
+                <!-- Temporary Connection Path -->
+                <Path x:Name="TempConnectionPath" Stroke="White" StrokeThickness="2" StrokeDashArray="4 2" Visibility="Collapsed">
+                    <Path.Data>
+                        <PathGeometry>
+                            <PathFigure x:Name="TempConnectionFigure">
+                                <BezierSegment x:Name="TempConnectionBezier"/>
+                            </PathFigure>
+                        </PathGeometry>
+                    </Path.Data>
+                </Path>
                 
                 <!-- Flow Name -->
                 <Border Background="#88000000" CornerRadius="4" Padding="8"

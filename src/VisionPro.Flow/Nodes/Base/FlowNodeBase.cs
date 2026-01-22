@@ -19,6 +19,21 @@ public abstract class FlowNodeBase : IFlowNode
     public List<string> OutputNodeIds { get; } = new();
     public double PositionX { get; set; }
     public double PositionY { get; set; }
+    
+    // New Port System
+    public List<Nodes.Ports.NodePort> InputPorts { get; protected set; } = new();
+    public List<Nodes.Ports.NodePort> OutputPorts { get; protected set; } = new();
+
+    protected FlowNodeBase(string name)
+    {
+        Name = name;
+        InitializePorts();
+    }
+    
+    protected virtual void InitializePorts()
+    {
+        // Derived classes will add ports here
+    }
     public byte[]? InputImage { get; protected set; }
     public byte[]? OutputImage { get; protected set; }
     public FlowNodeResult? Result { get; protected set; }

@@ -25,18 +25,23 @@ public class FlowEngine
         _flowDefinition = flow;
         _nodes.Clear();
         
-        foreach (var nodeDef in flow.Nodes)
+        var serializer = new Serialization.FlowSerializer();
+        var nodes = serializer.CreateNodes(flow);
+        
+        foreach (var node in nodes)
         {
-            var node = CreateNode(nodeDef.NodeType);
-            if (node != null)
-            {
-                // Configure the node
-                var configJson = System.Text.Json.JsonSerializer.SerializeToDocument(nodeDef);
-                node.Configure(configJson.RootElement);
-                
-                _nodes[nodeDef.NodeId] = node;
-            }
+            _nodes[node.NodeId] = node;
         }
+    }
+    
+    /// <summary>
+    /// Get current flow definition
+    /// </summary>
+    public FlowDefinition GetDefinition()
+    {
+        var serializer = new Serialization.FlowSerializer();
+        var name = _flowDefinition?.Name ?? "Current Flow";
+        return serializer.ConvertToDefinition(_nodes.Values.ToList(), name);
     }
     
     /// <summary>
@@ -204,15 +209,5 @@ public class FlowEngine
         return result;
     }
     
-    private static IFlowNode? CreateNode(FlowNodeType nodeType)
-    {
-        return nodeType switch
-        {
-            FlowNodeType.InputImage => new InputImageNode(),
-            FlowNodeType.TeachMatch => new TeachMatchNode(),
-            FlowNodeType.FinalDecision => new FinalDecisionNode(),
-            // Add more node types as they are implemented
-            _ => null
-        };
-    }
+
 }

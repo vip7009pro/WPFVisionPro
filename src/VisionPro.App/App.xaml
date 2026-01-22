@@ -1,10 +1,19 @@
 ﻿<Application x:Class="VisionPro.App.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             StartupUri="MainWindow.xaml">
+             xmlns:converters="clr-namespace:VisionPro.App.Converters">
     <Application.Resources>
         <ResourceDictionary>
-            <!-- Color Palette -->
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Include themes if any -->
+            </ResourceDictionary.MergedDictionaries>
+
+            <!-- Converters -->
+            <converters:StringToVisibilityConverter x:Key="StringToVisibilityConverter"/>
+            <converters:ByteArrayToImageConverter x:Key="ByteArrayToImageConverter"/>
+            <converters:NullToVisibilityConverter x:Key="NullToVisibilityConverter"/>
+            <converters:StatusToBrushConverter x:Key="StatusToBrushConverter"/>
+            <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
             <Color x:Key="PrimaryColor">#1E88E5</Color>
             <Color x:Key="SecondaryColor">#26A69A</Color>
             <Color x:Key="BackgroundColor">#1E1E2E</Color>
