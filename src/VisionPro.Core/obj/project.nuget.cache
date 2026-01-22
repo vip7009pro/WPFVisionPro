@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "V1x/6lvQrbQ=",
+  "success": true,
+  "projectFilePath": "G:\\NODEJS\\WPFVisionPro\\src\\VisionPro.Core\\VisionPro.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vip70\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
+    "C:\\Users\\vip70\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\vip70\\.nuget\\packages\\system.text.json\\8.0.4\\system.text.json.8.0.4.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'System.Text.Json' 8.0.4 has a known high severity vulnerability, https://github.com/advisories/GHSA-8g4q-xg66-9fp4",
+      "projectPath": "G:\\NODEJS\\WPFVisionPro\\src\\VisionPro.Core\\VisionPro.Core.csproj",
+      "warningLevel": 1,
+      "filePath": "G:\\NODEJS\\WPFVisionPro\\src\\VisionPro.Core\\VisionPro.Core.csproj",
+      "libraryId": "System.Text.Json",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}

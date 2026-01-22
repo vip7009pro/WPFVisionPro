@@ -1,0 +1,15 @@
+G:\NODEJS\WPFVisionPro\src\VisionPro.Vision\obj\Debug\net8.0\VisionPro.Vision.csproj.AssemblyReference.cache
+G:\NODEJS\WPFVisionPro\src\VisionPro.Vision\obj\Debug\net8.0\VisionPro.Vision.GeneratedMSBuildEditorConfig.editorconfig
+G:\NODEJS\WPFVisionPro\src\VisionPro.Vision\obj\Debug\net8.0\VisionPro.Vision.AssemblyInfoInputs.cache
+G:\NODEJS\WPFVisionPro\src\VisionPro.Vision\obj\Debug\net8.0\VisionPro.Vision.AssemblyInfo.cs
+G:\NODEJS\WPFVisionPro\src\VisionPro.Vision\obj\Debug\net8.0\VisionPro.Vision.csproj.CoreCompileInputs.cache
+G:\NODEJS\WPFVisionPro\src\VisionPro.Vision\bin\Debug\net8.0\VisionPro.Vision.deps.json
+G:\NODEJS\WPFVisionPro\src\VisionPro.Vision\bin\Debug\net8.0\VisionPro.Vision.dll
+G:\NODEJS\WPFVisionPro\src\VisionPro.Vision\bin\Debug\net8.0\VisionPro.Vision.pdb
+G:\NODEJS\WPFVisionPro\src\VisionPro.Vision\bin\Debug\net8.0\VisionPro.Core.dll
+G:\NODEJS\WPFVisionPro\src\VisionPro.Vision\bin\Debug\net8.0\VisionPro.Core.pdb
+G:\NODEJS\WPFVisionPro\src\VisionPro.Vision\obj\Debug\net8.0\VisionPr.9915D75B.Up2Date
+G:\NODEJS\WPFVisionPro\src\VisionPro.Vision\obj\Debug\net8.0\VisionPro.Vision.dll
+G:\NODEJS\WPFVisionPro\src\VisionPro.Vision\obj\Debug\net8.0\refint\VisionPro.Vision.dll
+G:\NODEJS\WPFVisionPro\src\VisionPro.Vision\obj\Debug\net8.0\VisionPro.Vision.pdb
+G:\NODEJS\WPFVisionPro\src\VisionPro.Vision\obj\Debug\net8.0\ref\VisionPro.Vision.dll

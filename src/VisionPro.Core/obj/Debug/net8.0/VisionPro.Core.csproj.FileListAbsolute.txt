@@ -1,0 +1,12 @@
+G:\NODEJS\WPFVisionPro\src\VisionPro.Core\bin\Debug\net8.0\VisionPro.Core.deps.json
+G:\NODEJS\WPFVisionPro\src\VisionPro.Core\bin\Debug\net8.0\VisionPro.Core.dll
+G:\NODEJS\WPFVisionPro\src\VisionPro.Core\bin\Debug\net8.0\VisionPro.Core.pdb
+G:\NODEJS\WPFVisionPro\src\VisionPro.Core\obj\Debug\net8.0\VisionPro.Core.csproj.AssemblyReference.cache
+G:\NODEJS\WPFVisionPro\src\VisionPro.Core\obj\Debug\net8.0\VisionPro.Core.GeneratedMSBuildEditorConfig.editorconfig
+G:\NODEJS\WPFVisionPro\src\VisionPro.Core\obj\Debug\net8.0\VisionPro.Core.AssemblyInfoInputs.cache
+G:\NODEJS\WPFVisionPro\src\VisionPro.Core\obj\Debug\net8.0\VisionPro.Core.AssemblyInfo.cs
+G:\NODEJS\WPFVisionPro\src\VisionPro.Core\obj\Debug\net8.0\VisionPro.Core.csproj.CoreCompileInputs.cache
+G:\NODEJS\WPFVisionPro\src\VisionPro.Core\obj\Debug\net8.0\VisionPro.Core.dll
+G:\NODEJS\WPFVisionPro\src\VisionPro.Core\obj\Debug\net8.0\refint\VisionPro.Core.dll
+G:\NODEJS\WPFVisionPro\src\VisionPro.Core\obj\Debug\net8.0\VisionPro.Core.pdb
+G:\NODEJS\WPFVisionPro\src\VisionPro.Core\obj\Debug\net8.0\ref\VisionPro.Core.dll

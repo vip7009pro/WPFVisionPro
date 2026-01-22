@@ -1,0 +1,34 @@
+{
+    "rois": [
+        {
+            "id": "ROI_001",
+            "name": "Inspection Area",
+            "type": 0,
+            "usage": 0,
+            "points": [
+                100,
+                100,
+                800,
+                600
+            ],
+            "rotation": 0,
+            "enabled": true,
+            "color": "#00FF00"
+        },
+        {
+            "id": "ROI_002",
+            "name": "Exclude Zone",
+            "type": 0,
+            "usage": 1,
+            "points": [
+                200,
+                200,
+                100,
+                100
+            ],
+            "rotation": 0,
+            "enabled": true,
+            "color": "#FF0000"
+        }
+    ]
+}

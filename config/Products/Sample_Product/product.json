@@ -1,0 +1,9 @@
+{
+    "productId": "SAMPLE_001",
+    "productName": "Sample Widget",
+    "version": "1.0",
+    "description": "Sample product configuration for demonstration",
+    "author": "VisionPro",
+    "createdAt": "2026-01-22T00:00:00Z",
+    "modifiedAt": "2026-01-22T00:00:00Z"
+}

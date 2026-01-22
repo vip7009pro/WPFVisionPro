@@ -1,0 +1,74 @@
+<UserControl x:Class="VisionPro.App.Views.ProductManagerControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="clr-namespace:VisionPro.App.ViewModels"
+             Background="{StaticResource BackgroundBrush}">
+    
+    <UserControl.DataContext>
+        <vm:ProductManagerViewModel/>
+    </UserControl.DataContext>
+    
+    <Grid Margin="16">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="350"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <!-- Product List -->
+        <Border Grid.Column="0" Background="{StaticResource SurfaceBrush}" CornerRadius="8" Padding="16" Margin="0,0,8,0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                
+                <TextBlock Grid.Row="0" Text="Products" FontSize="18" FontWeight="Bold"
+                           Foreground="{StaticResource TextPrimaryBrush}" Margin="0,0,0,12"/>
+                
+                <Button Grid.Row="1" Content="🔄 Refresh" Margin="0,0,0,12"
+                        Command="{Binding LoadProductsCommand}"/>
+                
+                <ListBox Grid.Row="2" ItemsSource="{Binding Products}" 
+                         SelectedItem="{Binding SelectedProduct}"
+                         Background="Transparent" BorderThickness="0"
+                         Margin="0,0,0,12">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Border Background="#333344" CornerRadius="4" Padding="12" Margin="0,4">
+                                <StackPanel>
+                                    <TextBlock Text="{Binding Name}" FontWeight="SemiBold"
+                                               Foreground="{StaticResource TextPrimaryBrush}"/>
+                                    <TextBlock Text="{Binding ProductId}" FontSize="11"
+                                               Foreground="{StaticResource TextSecondaryBrush}"/>
+                                    <TextBlock Text="{Binding LastModified, StringFormat='Modified: {0:g}'}" 
+                                               FontSize="10" Foreground="{StaticResource TextSecondaryBrush}"/>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                
+                <StackPanel Grid.Row="3">
+                    <Button Content="➕ New Product" Margin="0,4" Background="{StaticResource SecondaryBrush}"
+                            Command="{Binding CreateNewProductCommand}"/>
+                    <Button Content="🗑 Delete" Margin="0,4" Background="{StaticResource NGBrush}"
+                            Command="{Binding DeleteSelectedProductCommand}"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+        
+        <!-- Product Details -->
+        <Border Grid.Column="1" Background="{StaticResource SurfaceBrush}" CornerRadius="8" Padding="16">
+            <StackPanel>
+                <TextBlock Text="Product Details" FontSize="18" FontWeight="Bold"
+                           Foreground="{StaticResource TextPrimaryBrush}" Margin="0,0,0,16"/>
+                
+                <TextBlock Text="Select a product to view details" 
+                           Foreground="{StaticResource TextSecondaryBrush}"
+                           HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

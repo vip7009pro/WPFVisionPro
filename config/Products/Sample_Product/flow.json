@@ -1,0 +1,67 @@
+{
+    "flowId": "FLOW_SAMPLE_001",
+    "name": "Sample Inspection Flow",
+    "version": "1.0",
+    "nodes": [
+        {
+            "nodeId": "N001",
+            "nodeType": 0,
+            "name": "Input Image",
+            "positionX": 100,
+            "positionY": 200,
+            "inputs": [],
+            "outputs": [
+                "N002"
+            ],
+            "config": {}
+        },
+        {
+            "nodeId": "N002",
+            "nodeType": 1,
+            "name": "Pattern Match",
+            "positionX": 300,
+            "positionY": 200,
+            "inputs": [
+                "N001"
+            ],
+            "outputs": [
+                "N003"
+            ],
+            "config": {
+                "featureType": "ORB",
+                "matchThreshold": 0.7,
+                "minMatches": 10
+            }
+        },
+        {
+            "nodeId": "N003",
+            "nodeType": 6,
+            "name": "Final Decision",
+            "positionX": 500,
+            "positionY": 200,
+            "inputs": [
+                "N002"
+            ],
+            "outputs": [],
+            "config": {
+                "logic": "AND"
+            }
+        }
+    ],
+    "connections": [
+        {
+            "id": "C001",
+            "sourceNodeId": "N001",
+            "sourcePort": "output",
+            "targetNodeId": "N002",
+            "targetPort": "input"
+        },
+        {
+            "id": "C002",
+            "sourceNodeId": "N002",
+            "sourcePort": "output",
+            "targetNodeId": "N003",
+            "targetPort": "input"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "triggerInput": {
+        "id": "DI_TRIGGER",
+        "name": "Trigger Input",
+        "address": "I0.0",
+        "dataType": "bool"
+    },
+    "resultOutput": {
+        "id": "DO_RESULT",
+        "name": "OK/NG Result",
+        "address": "Q0.0",
+        "dataType": "bool"
+    },
+    "busyOutput": {
+        "id": "DO_BUSY",
+        "name": "Busy Flag",
+        "address": "Q0.1",
+        "dataType": "bool"
+    },
+    "digitalInputs": [],
+    "digitalOutputs": []
+}

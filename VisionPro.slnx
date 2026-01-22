@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/VisionPro.App/VisionPro.App.csproj" />
+    <Project Path="src/VisionPro.Communication/VisionPro.Communication.csproj" />
+    <Project Path="src/VisionPro.Core/VisionPro.Core.csproj" />
+    <Project Path="src/VisionPro.Flow/VisionPro.Flow.csproj" />
+    <Project Path="src/VisionPro.Infrastructure/VisionPro.Infrastructure.csproj" />
+    <Project Path="src/VisionPro.Vision/VisionPro.Vision.csproj" />
+  </Folder>
+</Solution>

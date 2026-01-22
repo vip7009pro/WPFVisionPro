@@ -1,0 +1,154 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\NODEJS\\WPFVisionPro\\src\\VisionPro.Communication\\VisionPro.Communication.csproj": {}
+  },
+  "projects": {
+    "G:\\NODEJS\\WPFVisionPro\\src\\VisionPro.Communication\\VisionPro.Communication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\NODEJS\\WPFVisionPro\\src\\VisionPro.Communication\\VisionPro.Communication.csproj",
+        "projectName": "VisionPro.Communication",
+        "projectPath": "G:\\NODEJS\\WPFVisionPro\\src\\VisionPro.Communication\\VisionPro.Communication.csproj",
+        "packagesPath": "C:\\Users\\vip70\\.nuget\\packages\\",
+        "outputPath": "G:\\NODEJS\\WPFVisionPro\\src\\VisionPro.Communication\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\vip70\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "G:\\NODEJS\\WPFVisionPro\\src\\VisionPro.Core\\VisionPro.Core.csproj": {
+                "projectPath": "G:\\NODEJS\\WPFVisionPro\\src\\VisionPro.Core\\VisionPro.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "NModbus4": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "OPCFoundation.NetStandard.Opc.Ua": {
+              "target": "Package",
+              "version": "[1.5.374.70, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\NODEJS\\WPFVisionPro\\src\\VisionPro.Core\\VisionPro.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\NODEJS\\WPFVisionPro\\src\\VisionPro.Core\\VisionPro.Core.csproj",
+        "projectName": "VisionPro.Core",
+        "projectPath": "G:\\NODEJS\\WPFVisionPro\\src\\VisionPro.Core\\VisionPro.Core.csproj",
+        "packagesPath": "C:\\Users\\vip70\\.nuget\\packages\\",
+        "outputPath": "G:\\NODEJS\\WPFVisionPro\\src\\VisionPro.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\vip70\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.2.2, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

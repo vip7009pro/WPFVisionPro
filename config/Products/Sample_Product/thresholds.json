@@ -1,0 +1,46 @@
+{
+    "defectThresholds": [
+        {
+            "id": "TH_001",
+            "name": "White Spot Detection",
+            "binaryThreshold": 200,
+            "minArea": 10,
+            "maxArea": 1000,
+            "morphologyKernel": 3,
+            "detectWhite": true,
+            "detectBlack": false
+        },
+        {
+            "id": "TH_002",
+            "name": "Black Spot Detection",
+            "binaryThreshold": 50,
+            "minArea": 10,
+            "maxArea": 1000,
+            "morphologyKernel": 3,
+            "detectWhite": false,
+            "detectBlack": true
+        }
+    ],
+    "measurementSpecs": [
+        {
+            "id": "M_001",
+            "name": "Width Measurement",
+            "type": "distance",
+            "nominal": 50.0,
+            "tolerancePlus": 0.5,
+            "toleranceMinus": 0.5,
+            "unit": "mm",
+            "pixelsPerUnit": 10.0
+        },
+        {
+            "id": "M_002",
+            "name": "Height Measurement",
+            "type": "distance",
+            "nominal": 30.0,
+            "tolerancePlus": 0.3,
+            "toleranceMinus": 0.3,
+            "unit": "mm",
+            "pixelsPerUnit": 10.0
+        }
+    ]
+}

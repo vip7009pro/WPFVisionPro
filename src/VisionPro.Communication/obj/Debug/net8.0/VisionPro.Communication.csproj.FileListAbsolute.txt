@@ -1,0 +1,15 @@
+G:\NODEJS\WPFVisionPro\src\VisionPro.Communication\bin\Debug\net8.0\VisionPro.Communication.deps.json
+G:\NODEJS\WPFVisionPro\src\VisionPro.Communication\bin\Debug\net8.0\VisionPro.Communication.dll
+G:\NODEJS\WPFVisionPro\src\VisionPro.Communication\bin\Debug\net8.0\VisionPro.Communication.pdb
+G:\NODEJS\WPFVisionPro\src\VisionPro.Communication\bin\Debug\net8.0\VisionPro.Core.dll
+G:\NODEJS\WPFVisionPro\src\VisionPro.Communication\bin\Debug\net8.0\VisionPro.Core.pdb
+G:\NODEJS\WPFVisionPro\src\VisionPro.Communication\obj\Debug\net8.0\VisionPro.Communication.csproj.AssemblyReference.cache
+G:\NODEJS\WPFVisionPro\src\VisionPro.Communication\obj\Debug\net8.0\VisionPro.Communication.GeneratedMSBuildEditorConfig.editorconfig
+G:\NODEJS\WPFVisionPro\src\VisionPro.Communication\obj\Debug\net8.0\VisionPro.Communication.AssemblyInfoInputs.cache
+G:\NODEJS\WPFVisionPro\src\VisionPro.Communication\obj\Debug\net8.0\VisionPro.Communication.AssemblyInfo.cs
+G:\NODEJS\WPFVisionPro\src\VisionPro.Communication\obj\Debug\net8.0\VisionPro.Communication.csproj.CoreCompileInputs.cache
+G:\NODEJS\WPFVisionPro\src\VisionPro.Communication\obj\Debug\net8.0\VisionPr.E9AC2F85.Up2Date
+G:\NODEJS\WPFVisionPro\src\VisionPro.Communication\obj\Debug\net8.0\VisionPro.Communication.dll
+G:\NODEJS\WPFVisionPro\src\VisionPro.Communication\obj\Debug\net8.0\refint\VisionPro.Communication.dll
+G:\NODEJS\WPFVisionPro\src\VisionPro.Communication\obj\Debug\net8.0\VisionPro.Communication.pdb
+G:\NODEJS\WPFVisionPro\src\VisionPro.Communication\obj\Debug\net8.0\ref\VisionPro.Communication.dll
